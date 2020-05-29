@@ -564,7 +564,7 @@ func (table *Table) GeneratePageBlocks(ctx DrawContext) ([]*Block, DrawContext, 
 				dw := w - cw
 				if dw > 0 {
 					ctx.X += dw / 2
-					ctx.Width -= dw / 2
+					ctx.Width -= dw
 				}
 			case CellHorizontalAlignmentRight:
 				if w > cw {
@@ -583,7 +583,7 @@ func (table *Table) GeneratePageBlocks(ctx DrawContext) ([]*Block, DrawContext, 
 				dh := h - ch
 				if dh > 0 {
 					ctx.Y += dh / 2
-					ctx.Height -= dh / 2
+					ctx.Height -= dh
 				}
 			case CellVerticalAlignmentBottom:
 				if h > ch {
