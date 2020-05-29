@@ -16,7 +16,7 @@ import (
 )
 
 // Defaults to unlicensed.
-var licenseKey = MakeUnlicensedKey()
+var licenseKey = MakeCommunityKey()
 
 // SetLicenseKey sets and validates the license key.
 func SetLicenseKey(content string, customerName string) error {

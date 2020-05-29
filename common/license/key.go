@@ -157,3 +157,12 @@ func MakeUnlicensedKey() *LicenseKey {
 	lk.CreatedAtInt = lk.CreatedAt.Unix()
 	return &lk
 }
+
+func MakeCommunityKey() *LicenseKey {
+	lk := LicenseKey{}
+	lk.CustomerName = ""
+	lk.Tier = LicenseTierCommunity
+	lk.CreatedAt = time.Now().UTC()
+	lk.CreatedAtInt = lk.CreatedAt.Unix()
+	return &lk
+}
