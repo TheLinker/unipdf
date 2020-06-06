@@ -130,10 +130,10 @@ func (border *border) GeneratePageBlocks(ctx DrawContext) ([]*Block, DrawContext
 	if border.fillColor != nil {
 		drawrect := draw.Rectangle{
 			Opacity: 1.0,
-			X:       border.x + border.borderWidthLeft/2 + border.borderWidthRight/2,
+			X:       border.x + border.borderWidthLeft/2,
 			Y:       ctx.PageHeight - border.y - border.height + border.borderWidthTop/2 + border.borderWidthBottom/2,
 			Height:  border.height - border.borderWidthTop - border.borderWidthBottom,
-			Width:   border.width - border.borderWidthLeft - border.borderWidthRight,
+			Width:   border.width - border.borderWidthLeft/2 - border.borderWidthRight/2,
 		}
 		drawrect.FillEnabled = true
 		drawrect.FillColor = border.fillColor

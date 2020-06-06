@@ -561,7 +561,7 @@ func (table *Table) GeneratePageBlocks(ctx DrawContext) ([]*Block, DrawContext, 
 				ctx.Width -= cell.indent
 			case CellHorizontalAlignmentCenter:
 				// Difference between available space and content space.
-				dw := w - cw
+				dw := w - cw - 0.001
 				if dw > 0 {
 					ctx.X += dw / 2
 					ctx.Width -= dw
