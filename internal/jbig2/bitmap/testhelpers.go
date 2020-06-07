@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"github.com/TheLinker/unipdf/v3/internal/jbig2/errors"
 )
 
 var (

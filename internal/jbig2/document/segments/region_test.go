@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/writer"
+	"github.com/TheLinker/unipdf/v3/internal/jbig2/bitmap"
+	"github.com/TheLinker/unipdf/v3/internal/jbig2/writer"
 )
 
 // TestEncodeRegion tests the encode function for the region structure.

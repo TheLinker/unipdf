@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/TheLinker/unipdf/v3/common"
+	"github.com/TheLinker/unipdf/v3/core"
+	"github.com/TheLinker/unipdf/v3/model"
 )
 
 // ContentStreamInlineImage is a representation of an inline image in a Content stream. Everything between the BI and EI operands.
