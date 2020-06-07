@@ -1,4 +1,4 @@
-module github.com/TheLinker/unipdf/v3
+module github.com/TheLinker/unipdf/v10
 
 go 1.11
 
